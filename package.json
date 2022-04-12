@@ -1,0 +1,35 @@
+{
+  "name": "lothus-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "@prismicio/client": "^6.3.0",
+    "@prismicio/helpers": "^2.2.0",
+    "auto-bind": "^5.0.1",
+    "express": "^4.17.3",
+    "gsap": "^3.9.1",
+    "include-media": "^1.4.10",
+    "lodash": "^4.17.21",
+    "nanoevents": "^6.0.2",
+    "node-fetch": "^3.2.0",
+    "ogl": "^0.0.86",
+    "prefix": "^1.0.0",
+    "sass": "^1.49.8",
+    "svgstore": "^3.0.1",
+    "vite": "^2.8.0",
+    "vite-plugin-glsl": "^0.0.9",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-mix": "^0.3.1",
+    "vite-plugin-pug": "^0.3.0"
+  },
+  "dependencies": {
+    "standard": "^16.0.4"
+  }
+}
