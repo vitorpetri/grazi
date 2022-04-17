@@ -1,9 +1,19 @@
 <nav class="menu">
     <div class="menu__wrapper">
-        <button class="menu__category">
-            <p class="menu__category__title">BORDADOS</p>
+        {{> components/menu-ball }}
 
-            <div class="menu__category__select"></div>
-        </button>
+        {{> components/menu-button
+            title = 'MATKA'
+        }}
+
+        {{> components/menu-button
+            title = 'BORDADOS'
+        }}
+
+        {{> components/menu-slider }}
+
+        {{> components/menu-button
+            title = 'GALLERY'
+        }}
     </div>
 </nav>

@@ -1,0 +1,66 @@
+@use "../utils/" as *;
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: $font-syne;
+  width: 100%;
+  padding: 2.4rem 9rem;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__button {
+  display: flex;
+  background: $color-green;
+  color: $color-gray;
+  padding: 0 3.2rem;
+  height: 6.2rem;
+  border-radius: 999rem;
+  align-items: center;
+  gap: 1.2rem;
+  transition: 250ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.menu__button__title {
+  font-size: 3.2rem;
+}
+
+.menu__button__select {
+
+  width: 6rem;
+  height: 2.2rem;
+  border-radius: 999rem;
+  background: $color-gray;
+  @extend %center;
+}
+
+.menu__button__select__line {
+  width: 4rem;
+  height: 0.2rem;
+  border-radius: 999rem;
+  background: $color-green;
+}
+
+.menu__ball {
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  background: $color-green;
+}
+
+.menu__slider {
+  width: 64rem;
+  height: 2.2rem;
+  border-radius: 12rem;
+  background: $color-green;
+}

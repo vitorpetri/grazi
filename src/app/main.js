@@ -1,6 +1,7 @@
 import '../styles/index.scss'
 
 import Cursor from './components/Cursor'
+import MenuButton from './components/MenuButton'
 
 import AboutScene from './scenes/About'
 import HomeScene from './scenes/Home'
@@ -17,6 +18,9 @@ const App = new Application()
 const components = [
   {
     component: Cursor
+  },
+  {
+    component: MenuButton
   }
 ]
 
