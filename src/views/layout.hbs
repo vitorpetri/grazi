@@ -7,16 +7,22 @@
     <title>Lothus boilerplate</title>
   </head>
   <body>
-    {{> navigation/menu }}
-
-    {{> components/cursor }}
+    {{!-- {{> components/cursor }} --}}
 
     <div class="app" data-template="{{ template }}">
+      <div id="vanta-canvas"></div>
+
+      {{> navigation/menu }}
+
       {{> @partial-block }}
     </div>
 
-    {{> navigation/footer }}
+    {{!-- {{> navigation/footer }} --}}
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script type="module" src="{{resolve-from-root '../app/canvas/vanta.js'}}"></script>
+    
     <script type="module" src="{{resolve-from-root '../app/main.js'}}"></script>
   </body>
 </html>

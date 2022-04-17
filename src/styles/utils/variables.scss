@@ -1,6 +1,19 @@
 // Colors.
 $color-black: #000;
 $color-white: #f2f2f2;
+$color-gray: #CECECE;
+$color-green: #0C5A35;
+
+// Fonts.
+$font-patheos: 'Patheos';
+
+// Indexes.
+$z-indexes: (
+  'canvas',
+  'app',
+  'cursor',
+);
+
 
 // Easings.
 $ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -34,20 +47,3 @@ $ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 $ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 $ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-// Fonts.
-$font-blocus: 'Blocus';
-$font-bookmania: 'Bookmania';
-$font-helvetica-neue: 'Helvetica Neue';
-$font-medieval-pixel: 'Medieval Pixel';
-$font-narly-ot-outline: 'Narly OT Outline';
-$font-the-pretender: 'The Pretender';
-
-$font-ed-sonar-regular: 'ed_sonarregular';
-$font-coronard-regular: 'coronardregular';
-
-$z-indexes: (
-  'canvas',
-  'app',
-  'cursor',
-);

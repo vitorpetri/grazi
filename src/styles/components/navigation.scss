@@ -1,40 +1,35 @@
 @use "../utils/" as *;
 
 .menu {
-  padding: 0 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.4rem 6.4rem;
 }
 
 .menu__wrapper {
+  height: 10rem;
+}
+
+.menu__category {
+  background: $color-green;
+  color: $color-gray;
+  padding: 1.6rem 3rem;
+  border-radius: 999rem;
+
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid $color-black;
-  display: flex;
-  height: 13rem;
-  justify-content: space-between;
-  width: 100%;
+  gap: 2.4rem;
 }
 
-.menu__title {
-  font-size: 0;
+.menu__category__title {
+  font-size: 2.6rem;
 }
 
-.menu__title__media {
-  display: block;
-  width: 11.1rem;
-}
-
-.menu__list {
-  display: flex;
-}
-
-.menu__item {
-  &:not(:first-child) {
-    margin-left: 5.5rem;
-  }
-}
-
-.menu__link {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
+.menu__category__select {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 999rem;
+  background: $color-gray;
 }
