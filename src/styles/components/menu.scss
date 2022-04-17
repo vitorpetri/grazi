@@ -7,6 +7,7 @@
   font-family: $font-syne;
   width: 100%;
   padding: 2.4rem 9rem;
+  z-index: 1;
 }
 
 .menu__wrapper {
@@ -16,6 +17,7 @@
 }
 
 .menu__button {
+  position: relative;
   display: flex;
   background: $color-green;
   color: $color-gray;
@@ -24,31 +26,92 @@
   border-radius: 999rem;
   align-items: center;
   gap: 1.2rem;
-  transition: 250ms;
+  transition: 350ms;
 
   &:hover {
-    transform: scale(1.1);
+    .menu__button__title {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+
+    .menu__button__select {
+      width: 78%; 
+      height: 23.2rem;
+      bottom: 25%;
+      transform: translateY(0);
+    }
+
+    .menu__button__select__line {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      padding: 2rem;
+      border: 2px solid $color-green;
+    }
+
+    .menu__button__title__inside {
+      opacity: 1;
+    }
   }
+}
+
+.menu__button__title__inside {
+  font-size: 3.2rem;
+  transition: 350ms;
+  color: $color-green;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .menu__button__title {
   font-size: 3.2rem;
+  transition: 350ms;
 }
 
 .menu__button__select {
-
+  position: absolute;
+  right: 3.2rem;
+  bottom: 50%;
+  transform: translateY(50%);
   width: 6rem;
   height: 2.2rem;
-  border-radius: 999rem;
+  border-radius: 2.4rem;
   background: $color-gray;
-  @extend %center;
+  transition: 550ms;
+}
+
+.menu__button__select__content {
+  width: 6rem;
+  height: 2.2rem;
+  transition: 350ms;
+}
+
+.menu__button__select__line__warpper {
+  position: relative;
 }
 
 .menu__button__select__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 4rem;
+  border-radius: 2.4rem;
   height: 0.2rem;
-  border-radius: 999rem;
-  background: $color-green;
+  border: 1px solid $color-green;
+  transition: 350ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+
+  p {
+    border-bottom: 2px solid $color-green;
+    width: 100%;
+    text-align: end;
+  }
 }
 
 .menu__ball {

@@ -1,0 +1,95 @@
+@use "../utils/" as *;
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: $font-syne;
+  width: 100%;
+  padding: 2.4rem 9rem;
+  z-index: 1;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__button {
+  display: flex;
+  position: relative;
+  background: $color-green;
+  height: 6.2rem;
+  border-radius: 999rem;
+  align-items: center;
+  gap: 1.2rem;
+  transition: 350ms;
+  padding: 0 3.2rem;
+
+  &--active {
+    .nav__button__title {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    
+    .nav__button__list {
+      opacity: 1;
+    }
+    
+    .nav__button__select {
+      right: 2.4rem;
+      width: calc(100% - 4.8rem);
+      height: auto;
+      padding: 1.2rem 0;
+    }
+    
+    .nav__button__select__line {
+      background: $color-green;
+      width: 13.2rem;
+    }
+  }
+}
+
+.nav__button__title {
+  color: $color-gray;
+  font-size: 3.2rem;
+  padding-right: 8rem;
+  transition: 350ms;
+}
+
+.nav__button__list {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 350ms;
+  gap: 0.8rem;
+}
+
+.nav__button__item {
+  font-size: 3.2rem;
+  color: $color-green;
+  border-bottom: 2px solid $color-green;
+  text-align: end;
+}
+
+.nav__button__select {
+  position: absolute;
+  right: 3.2rem;
+  bottom: 30%;
+  width: 6.4rem;
+  height: 2.4rem;
+  background: $color-gray;
+  border-radius: 2.4rem;
+  transition: 350ms;
+  border: 2px solid $color-green;
+  @extend %center;
+}
+
+.nav__button__select__line {
+  background: $color-green;
+  width: 3.2rem;
+  height: 0.3rem;
+  border-radius: 999rem;
+  transition: 350ms;
+}
