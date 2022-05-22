@@ -39,6 +39,7 @@
       height: 23.2rem;
       bottom: 25%;
       transform: translateY(0);
+      overflow: hidden;
     }
 
     .menu__button__select__line {
@@ -49,10 +50,16 @@
       transform: translate(0, 0);
       padding: 2rem;
       border: 2px solid $color-green;
+      overflow: hidden;
+
+      &__wrapper {
+        overflow: hidden;
+      }
     }
 
     .menu__button__title__inside {
       opacity: 1;
+      cursor: pointer;
     }
   }
 }
@@ -62,7 +69,9 @@
   transition: 350ms;
   color: $color-green;
   opacity: 0;
-  cursor: pointer;
+  cursor: none;
+  user-select: none;
+  touch-action: none;
 }
 
 .menu__button__title {
